@@ -22,6 +22,9 @@
 .bennav:hover{
     background-color: rgba(0, 0, 0, 0.609);
     transition: .5s all ease-in-out;
+}
 
-
+.benimg{
+    height: 400px;
+    object-fit: cover;
 }
