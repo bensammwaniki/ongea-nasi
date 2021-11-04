@@ -17,14 +17,19 @@
     margin-top: -100px;
 }
 .bennav{
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .bennav:hover{
-    background-color: rgba(0, 0, 0, 0.609);
+    background-color: rgba(0, 0, 0, 0.753);
     transition: .5s all ease-in-out;
 }
 
 .benimg{
     height: 400px;
     object-fit: cover;
+}
+.loginbody{
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 16.8%;
 }
