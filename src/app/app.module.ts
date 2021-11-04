@@ -7,6 +7,16 @@ import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
+import { RouterModule,Routes } from '@angular/router';
+
+
+// routes 
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SigninComponent },
+];
 
 @NgModule({
   declarations: [
@@ -18,8 +28,12 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )  
+  ],    
   providers: [],
   bootstrap: [AppComponent]
 })
