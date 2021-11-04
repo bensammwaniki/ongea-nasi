@@ -2,7 +2,9 @@
 
 
 @import "~bootstrap/dist/css/bootstrap.css";
-
+.body{
+    min-height: 100vh;
+}
 .btns:hover{
     background-color: rgb(0, 102, 255);
     border-radius: 20px;
@@ -33,9 +35,8 @@
     margin-top: 10%;
     margin-bottom: 18%;
 }
-.benbg{
-background-color: black;
-}
+/* .benbg{
+} */
 .signinbody{
     margin: auto;
     margin-top: 8%;
