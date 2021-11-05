@@ -46,11 +46,10 @@
     position: relative;
 }
 .overlay{
-    width: 1000px;
-    height: fit-content;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    margin: auto;
+    height: fit-content;
     text-align: center;
     color: rgb(246, 111, 0);
     text-shadow: rgb(27, 27, 27) 2px 5px 4px;
