@@ -54,3 +54,6 @@
     color: rgb(246, 111, 0);
     text-shadow: rgb(27, 27, 27) 2px 5px 4px;
   }
+  .carousel-inner{
+    filter: blur(6px);
+  }
