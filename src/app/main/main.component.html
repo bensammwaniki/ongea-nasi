@@ -19,6 +19,10 @@
               </li>
 
               <li class="nav-item m-2 px-3 btns">
+                <a class="nav-link active" aria-current="page" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#post">Share</a>
+              </li>
+
+              <li class="nav-item m-2 px-3 btns">
                 <a class="nav-link active" aria-current="page" routerLink="signup">Signup</a>
               </li>
 
@@ -29,6 +33,52 @@
           </div>
         </div>
       </nav>
+
+
+      <!-- modal  -->
+      <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hi!! Post an Your story here</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form >
+
+              <div class="form-group">
+                    <label for="image_name">Post name</label>
+                    <input type="text" class="form-control" name="title"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="image_name">location</label>
+                    <input type="text" class="form-control"  name="location" 
+                    required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        name="content" required></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="exampleFormControlFile1">Upload a file</label>
+                    <input type="file" class="form-control" id="exampleFormControlFile1"
+                        name="image">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-warning">Upload</button>
+                </div>
+            </form>
+          </div>
+    
+    
+          </div>
+        </div>
+      </div>
+      <!-- modal  -->
+
+
 
 
       <router-outlet></router-outlet>
